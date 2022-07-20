@@ -13,7 +13,7 @@ using (var _context = new AppDbContext())
 
     products.ForEach(p =>
     {
-        Console.WriteLine($"{p.Name}");
+        Console.WriteLine($"{p.Name} - {p.Stock}");
     });
 
 

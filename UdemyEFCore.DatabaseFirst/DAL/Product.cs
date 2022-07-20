@@ -11,5 +11,6 @@ namespace UdemyEFCore.DatabaseFirst.DAL
         public int ID { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
+        public int? Stock { get; set; } //nullable olduğu için soru işareti koyduk
     }
 }
