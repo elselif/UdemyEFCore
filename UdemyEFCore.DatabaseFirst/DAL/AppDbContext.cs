@@ -11,6 +11,18 @@ namespace UdemyEFCore.DatabaseFirst.DAL
     {
         public DbSet<Product> Products { get; set; }
 
+
+        public AppDbContext()
+        {
+
+        }
+
+        //parametre alınan bir constructorda yukardaki defaul constructor da tanımlanmalı
+
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
+        {
+
+        }
         
     }
 }
